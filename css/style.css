@@ -75,6 +75,25 @@ ul {
   left: 0;
   right: 0; }
 
+.form-input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #E2AB3F;
+  margin-bottom: 20px;
+  padding: 14px 31px;
+  font-family: 'RobotoCondensed-Light';
+  font-size: 18px;
+  line-height: 21px; }
+  .form-input::-webkit-input-placeholder {
+    color: #000000; }
+  .form-input:-ms-input-placeholder {
+    color: #000000; }
+  .form-input::-ms-input-placeholder {
+    color: #000000; }
+  .form-input::placeholder {
+    color: #000000; }
+
 .header {
   background: url("../images/header-background.jpg") no-repeat;
   height: 100vh;
@@ -203,7 +222,7 @@ ul {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
-  background: #FFFFFF;
+  background: transparent;
   border: 1px solid #E2AB3F;
   padding: 11px 53px; }
 
@@ -245,12 +264,66 @@ ul {
     .price__on-title {
       font-family: 'RobotoCondensed-Regular';
       font-size: 24px;
-      line-height: 28px; }
+      line-height: 28px;
+      margin-bottom: 50px; }
   .price__list-item {
     margin-bottom: 20px; }
   .price__off-title {
     font-family: 'RobotoCondensed-Regular';
     font-size: 24px;
-    line-height: 28px; }
+    line-height: 28px;
+    margin-bottom: 50px; }
+
+.contacts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.contacts__content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+.contacts__date {
+  margin-bottom: 20px; }
+.contacts__price {
+  margin-left: 120px; }
+.contacts__date, .contacts__price {
+  font-family: 'balqis';
+  font-size: 96px;
+  line-height: 100px;
+  color: #E2AB3F; }
+.contacts__date span, .contacts__price span {
+  display: block;
+  font-family: 'RobotoCondensed-LightItalic';
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  margin: -10px 0 0 205px; }
+.contacts__form {
+  max-width: 383px;
+  margin: 0 auto; }
+  .contacts__form-title {
+    font-family: 'RobotoCondensed-Regular';
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 50px; }
+  .contacts__form-btn {
+    text-transform: uppercase;
+    background: transparent;
+    padding: 11px 45px;
+    border: 1px solid #E2AB3F;
+    font-family: 'RobotoCondensed-Light';
+    font-size: 24px;
+    line-height: 28px;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

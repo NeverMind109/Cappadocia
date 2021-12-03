@@ -50,3 +50,17 @@ ul {
     left: 0;
     right: 0;
 }
+.form-input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #E2AB3F;
+    margin-bottom: 20px;
+    padding: 14px 31px;
+    font-family: 'RobotoCondensed-Light';
+    font-size: 18px;
+    line-height: 21px;
+    &::placeholder {
+        color: #000000;
+    }
+}

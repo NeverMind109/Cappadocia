@@ -1,0 +1,53 @@
+.contacts {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__date {
+        margin-bottom: 20px;
+    }
+    &__price {
+        margin-left: 120px;
+    }
+    &__date, &__price {
+        font-family: 'balqis';
+        font-size: 96px;
+        line-height: 100px;
+        color: #E2AB3F;
+    }
+    &__date span,
+    &__price span {
+        display: block;
+        font-family: 'RobotoCondensed-LightItalic';
+        font-size: 24px;
+        line-height: 28px;
+        color: #000;
+        margin: -10px 0 0 205px;
+    }
+    &__form {
+        max-width: 383px;
+        margin: 0 auto;
+        &-title {
+            font-family: 'RobotoCondensed-Regular';
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 50px;
+        }
+        &-btn {
+            text-transform: uppercase;
+            background: transparent;
+            padding: 11px 45px;
+            border: 1px solid #E2AB3F;
+            font-family: 'RobotoCondensed-Light';
+            font-size: 24px;
+            line-height: 28px;
+            cursor: pointer;
+        }
+    }
+}
