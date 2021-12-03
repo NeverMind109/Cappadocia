@@ -1,4 +1,5 @@
 $(function(){
+// Слайдеры
     $('.fairy-tail__slider').slick({
         infinite: true,
         nextArrow: '<button type = "button" class = "slick-btn slick-next"><img src="images/next-arrow.svg" alt="Icon: Next"></ button>',
@@ -14,7 +15,6 @@ $(function(){
             }
         ]
     });
-
     $('.our-trip__slider').slick({
         infinite: true,
         nextArrow: '<button type = "button" class = "slick-btn slick-next"><img src="images/next-arrow.svg" alt="Icon: Next"></ button>',
@@ -29,5 +29,19 @@ $(function(){
                 }
             }
         ]
+    });
+
+// Плавный переход по якорным ссылкам
+    $(".menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+    $(".our-trip__body").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
     });
 });
