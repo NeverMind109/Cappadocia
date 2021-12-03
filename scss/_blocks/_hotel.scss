@@ -12,6 +12,7 @@
     }
     &__text {
         margin-bottom: 20px;
+        word-wrap: break-word;
     }
     &__gallery {
         margin-top: 30px;
@@ -20,6 +21,7 @@
         justify-content: space-between;
         &-link {
             margin-top: 50px;
+            text-align: center;
         }
     }
 }
